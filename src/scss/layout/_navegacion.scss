@@ -1,0 +1,97 @@
+.barra{
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+
+    .logotipo{
+        width: 16rem;
+    }
+    @include tablet{
+
+    .logotipo{
+        width: 23rem;
+
+    }
+
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+
+
+}
+
+
+.navegacion{
+    display: none;
+    opacity: 0;
+    height: 0;
+    
+
+ 
+        
+
+
+    @include tablet{
+        display: flex;
+        align-items: center;
+        gap:1.2rem;
+        opacity:1;
+    }
+
+    a{
+        color: darken($blanco, 10%);
+        text-decoration: none;
+        font-size: 1.7rem;
+        display: block;
+        text-align: center;
+
+        &:hover{
+            color: $blanco;
+        }
+    }
+
+   
+}
+
+
+//menu responsive
+.barra-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+   
+}
+
+
+.mobile-menu{
+   
+    width: 2rem;
+    &:hover{
+        cursor: pointer;
+    }
+    @include tablet{
+        display: none;
+    }
+}
+
+.visible{
+    display: block;
+    opacity: 1;
+    transition: display .3s, opacity .7s;
+    transition-behavior: allow-discrete;
+
+    @starting-style{
+        opacity:0;
+    }
+
+    height: auto;
+    @include tablet{
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+

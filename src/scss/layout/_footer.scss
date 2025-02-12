@@ -1,0 +1,21 @@
+.footer{
+    background-color: $grisOscuro;
+    padding: 2rem 0;
+    margin-bottom: 0;
+    .contenido-footer{
+        padding-top: $separacion/2;
+    }
+    .navegacion{
+        display: flex;
+        opacity: 1;
+        justify-content: space-around;
+        align-items: center;
+
+        @include tablet{
+            justify-content: unset;
+        }
+    }
+    .copy{
+        font-size: 1.3rem;
+    }
+}

@@ -1,0 +1,23 @@
+.alerta{
+  
+    padding: .5rem;
+    margin:1rem 0 1rem 0;
+}
+.error{
+    background-color: rgb(255, 0, 0);
+    color: $blanco;
+    text-align: center;
+}
+
+.exito{
+    background-color: $verde;
+    color: $blanco;
+    text-align: center;
+}
+
+
+.imagen-sm{
+    font-weight: bold;
+    width: 30rem;
+    margin-bottom: 2rem;
+}
